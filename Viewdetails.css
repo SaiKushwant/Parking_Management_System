@@ -1,0 +1,175 @@
+
+
+.details-page {
+  background: #f3f4f6;
+  min-height: 100vh;
+  min-width: 100vw;
+  color: #111827;
+}
+
+
+.back-btn { 
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #e0e7ff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #4f46e5;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.back-btn:hover {
+  background: #c7d2fe;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #4f46e5;
+}
+.details-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* push main content below header dynamically */
+.details-container {
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  padding-top: calc(2rem); /* header height */
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+
+
+.lot-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.lot-image {
+  width: 100%;
+  max-width: 500px;
+  padding: 16px; /* space around the image */
+  background: #f9f9f9; /* optional, shows the space nicely */
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lot-image img {
+  width: 100%;
+  height: auto; /* keeps full image visible */
+  object-fit: contain;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+
+.lot-image img:hover {
+  transform: scale(1.03);
+}
+
+.lot-info {
+  flex: 1;
+  min-width: 300px;
+}
+
+.lot-info h1 {
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.lot-address {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+.lot-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat {
+  background: #f0f9ff;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+}
+
+.stat span {
+  display: block;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.stat strong {
+  font-size: 18px;
+  color: #111827;
+}
+
+.lot-features h2 {
+  font-size: 22px;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.lot-features ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.lot-features li {
+  background: #f0fdf4;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #065f46;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.no-features {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.loading {
+  text-align: center;
+  padding: 4rem;
+  font-size: 20px;
+  color: #6b7280;
+}
+ 
